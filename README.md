@@ -1,6 +1,20 @@
 # vrp-solution-witn-genetic-algorithm
 solve VRP with genetic algorithm based on python
 
+geneNum = 100 # 种群数量
+generationNum = 1500  # 迭代次数
+CENTER = 0  # 配送中心
+HUGE = 999999
+VARY = 0.05  # 变异几率
+n = 90  # 客户点数量
+k = 8   # 车辆数量
+Q = 264 # 额定载重量
+dis = 160  # 续航里程, km
+costPerKilo = 10  # 油价
+epu = 20  # 早到惩罚成本
+lpu = 30  # 晚到惩罚成本
+speed = 40  # 速度，km/h
+
 def getfit():
 
 第一個for 
