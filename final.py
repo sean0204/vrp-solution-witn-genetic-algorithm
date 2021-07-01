@@ -1,7 +1,7 @@
 import random, math, sys
-import matplotlib.pyplot as plt # 画图
+import matplotlib.pyplot as plt # 畫圖
 from copy import deepcopy
-from tqdm import *  # 进度条
+from tqdm import *  # 進度條
 from scipy.spatial.distance import pdist
 from scipy.spatial.distance import squareform
 import numpy as np
@@ -9,23 +9,23 @@ import pandas as pd
 
 DEBUG = False
 
-geneNum = 100 # 种群数量
-generationNum = 1500  # 迭代次数
+geneNum = 100 # 種群數量
+generationNum = 1500  # 迭代次數
 
 CENTER = 0  # 配送中心
 
 HUGE = 999999
-VARY = 0.05  # 变异几率
-n = 90  # 客户点数量
-k = 8   # 车辆数量
-Q = 264 # 额定载重量, t
+VARY = 0.05  # 變異機率
+n = 90  # 客戶點數量
+k = 8   # 車輛數量
+Q = 264 # 額定載重量, t
 q=np.array([128.8,192,192,192,264,264,264,264,264,264,264,264,264,264,264,264,264,416,416])
 carC=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]
 carx=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]
-dis = 160  # 续航里程, km
-costPerKilo = 10  # 油价
-epu = 20  # 早到惩罚成本
-lpu = 30  # 晚到惩罚成本
+dis = 160  # 續航里程, km
+costPerKilo = 10  # 油價
+epu = 20  # 早到逞罰成本
+lpu = 30  # 晚到逞罰成本
 speed = 40  # 速度，km/h
 
 Tkmax=480
